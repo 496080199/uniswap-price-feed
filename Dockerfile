@@ -8,4 +8,4 @@ USER keeper
 
 RUN rm -rf _virtualenv&&virtualenv --system-site-packages _virtualenv&&sh _virtualenv/bin/activate
 
-CMD ["bin/uniswap-price-feed"]
+ENTRYPOINT ["bin/uniswap-price-feed"]
